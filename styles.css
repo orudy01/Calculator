@@ -1,0 +1,85 @@
+body {
+    background-color: darkgray;
+    /*keep footer at bottom*/
+    min-height: 100vh;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white 10px solid;
+    height: 85vh;
+}
+
+.calculator {
+    height: 450px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.display {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: 135px;
+    width: 230px;
+    font-size: 48px;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    height: 250px;
+}
+
+.zero {
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+button {
+    border-radius: 50%;
+    color: white;
+    background-color: #323232;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+ .zero {
+    border-radius: 30%;
+    text-align: start;
+    text-indent: 10px;
+}
+
+.right-side {
+    background-color: #fd9d09;
+}
+
+.top {
+    background-color: #a4a4a4;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: aliceblue;
+
+    /*keep footer at bottom*/
+    position: sticky;
+    top: 100%;
+}
