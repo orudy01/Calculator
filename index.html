@@ -13,27 +13,27 @@
 <body>
     <div class="content-container">
         <div class="calculator">
-            <div class="display"> 0</div>
+            <div class="display" id="calc-Display"> 0 </div>
             <div class="calculator-buttons">
-                <button class="top">AC</button>
+                <button class="top" onclick="resetDisplay()">AC</button>
                 <button class="top">+/-</button>
                 <button class="top">%</button>
                 <button class="right-side">/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button onclick="addToValue('7')">7</button>
+                <button onclick="addToValue('8')">8</button>
+                <button onclick="addToValue('9')">9</button>
                 <button class="right-side">x</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+                <button onclick="addToValue('4')">4</button>
+                <button onclick="addToValue('5')">5</button>
+                <button onclick="addToValue('6')">6</button>
                 <button class="right-side">-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="right-side">+</button>
-                <button class="zero">0</button>
+                <button onclick="addToValue('1')">1</button>
+                <button onclick="addToValue('2')">2</button>
+                <button onclick="addToValue('3')">3</button>
+                <button class="right-side" onclick="prepNextValue('add')">+</button>
+                <button class="zero" onclick="addToValue('0')">0</button>
                 <button>.</button>
-                <button class="right-side">=</button>
+                <button class="right-side" onclick="showAnswer()">=</button>
                 
             </div>
         </div>
