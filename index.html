@@ -16,17 +16,17 @@
             <div class="display" id="calc-Display"> 0 </div>
             <div class="calculator-buttons">
                 <button class="top" onclick="resetDisplay()">AC</button>
-                <button class="top">+/-</button>
+                <button class="top" onclick="changeSign()">+/-</button>
                 <button class="top">%</button>
-                <button class="right-side">/</button>
+                <button class="right-side" onclick="prepNextValue('divide')">/</button>
                 <button onclick="addToValue('7')">7</button>
                 <button onclick="addToValue('8')">8</button>
                 <button onclick="addToValue('9')">9</button>
-                <button class="right-side">x</button>
+                <button class="right-side" onclick="prepNextValue('multiply')">x</button>
                 <button onclick="addToValue('4')">4</button>
                 <button onclick="addToValue('5')">5</button>
                 <button onclick="addToValue('6')">6</button>
-                <button class="right-side">-</button>
+                <button class="right-side" onclick="prepNextValue('subtract')">-</button>
                 <button onclick="addToValue('1')">1</button>
                 <button onclick="addToValue('2')">2</button>
                 <button onclick="addToValue('3')">3</button>
